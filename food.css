@@ -22,7 +22,7 @@
     font-style: bold;    
 }
 #cart{
-    color: red;
+    color: rgb(247, 15, 15);
    position: absolute;
    right: 30px;
    top: 20px;
