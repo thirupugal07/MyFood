@@ -2,30 +2,86 @@
     margin: 0;
     padding: 0;
 }
-.nav{
-    display: flex;
-     margin: auto;
+@media (min-width:600px){
     
-     box-shadow: rgba(0,0,0,.25) 0px 5px 15px;
+    .nav{
+        width: 100%;
+        height: auto;
+        display: flex;
+         margin: auto;
+        
+         box-shadow: rgba(0,0,0,.25) 0px 5px 15px;
+    }
+    .cart{
+        position: absolute;
+        right: 10px;
+        max-width: 1200px;     
+        display: block;
+    }
+    .cartno{   
+        position: absolute;
+        right: 40px;
+        top: 5px;
+        font-size: 23px;
+        font-style: bold;    
+    }
+    #cart{
+        color: rgb(247, 15, 15);
+       position: absolute;
+       right: 28px;
+       top: 15px;
+       width: 50px;
+       height: 50px;
+         
+    }
+     
+    .foodcontainer{
+       width: 100%;
+       height: 150px;
+       text-align: center;
+    }
+    .title h1{
+    padding-top: 50px;    
+    }
+    .shop{
+        margin-left: 10%;    
+        margin-right: 10%;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: repeat(auto-fill,minmax(220px,auto));
+         gap: 20px;
+    }
+    .foods{
+       border: 1px solid rgb(255, 0, 0);
+       width: 200px;
+       height: 225px; 
+       text-align: center;
+    
+    
+       
+    
+    }
+    .food-titile{
+        font-size: large;
+        font-weight: 700;
+    }
+    .food-rate{
+        text-align: left;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+    .pic img{
+        width: 100%;
+         height: 150px;
+       
+    }.pic{
+        padding: 10px;
+    
+        
+    }
+       
+    
 }
-.cart{
-    position: absolute;
-    right: 10px;
-    max-width: 1200px;     
-    display: block;
-}
-.cartno{   
-    position: absolute;
-    right: 40px;
-    top: 5px;
-    font-size: 23px;
-    font-style: bold;    
-}
-#cart{
-    color: rgb(247, 15, 15);
-   position: absolute;
-   right: 30px;
-   top: 20px;
-   width: 50px;
-   height: 50px;
-   }
