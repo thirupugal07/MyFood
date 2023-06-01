@@ -35,13 +35,11 @@
          
     }
      
-    .foodcontainer{
-       width: 100%;
-       height: 150px;
-       text-align: center;
-    }
-    .title h1{
-    padding-top: 50px;    
+   
+    .title {
+    padding-top: 10px; 
+   margin-bottom: 10px;
+   text-align: center;
     }
     .shop{
         margin-left: 10%;    
@@ -53,35 +51,57 @@
          gap: 20px;
     }
     .foods{
-       border: 1px solid rgb(255, 0, 0);
+     
+       padding: 10px;
        width: 200px;
-       height: 225px; 
-       text-align: center;
-    
-    
+       height: 200px;
+       position: relative;
+       box-shadow: 0 1px 4px rgba(45,37,37,0.1);
        
-    
     }
     .food-titile{
         font-size: large;
         font-weight: 700;
+        margin-top: 5px;
     }
     .food-rate{
-        text-align: left;
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 5px;
-        font-weight: 600;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        
+        font-weight: 550;
+       
     }
     .pic img{
-        width: 100%;
-         height: 150px;
-       
-    }.pic{
-        padding: 10px;
+       width: 100%;
+      height: 75%;
+      transition: 0.3s;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+   .shop-container{
     
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+   }
+   .add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(13, 211, 13);
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+   }
+   .add-cart:hover{
+    color: rgb(255, 122, 122);
+   }
+    .pic img:hover{
+     transform: scale(1.1);
+     object-fit: cover;
         
     }
-       
-    
 }
