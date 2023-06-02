@@ -4,6 +4,225 @@
 }
 @media (min-width:600px){
     
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .nav{
+        
+        width: 100%;
+        height: 80px;
+        
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         
+         box-shadow: rgba(0,0,0,.25) 0px 5px 15px;
+    }
+    .cart{
+       position: relative;
+      margin-right: 10px;
+
+           
+       
+    }
+    .cartno{   
+          position: absolute;
+          left: 28px;
+          text-align: center;
+          top: -10px;
+          width:20px;
+        font-size: 21px;
+        font-style: bold;   
+        border-radius: 50px;
+        background-color: rgb(0, 255, 0); 
+    }
+    #cart{
+        color: rgb(247, 15, 15);
+     
+       width: 50px;
+       height: 50px;
+         
+    }
+    .head-space{
+        width: 100%;
+        height: 50px;
+    }
+     
+   
+    .title {
+    padding-top: 10px; 
+   margin-bottom: 10px;
+   text-align: center;
+    }
+    .shop{
+        margin-left: 10%;    
+        margin-right: 10%;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: repeat(auto-fill,minmax(220px,auto));
+         gap: 20px;
+    }
+    .foods{
+     
+       padding: 10px;
+       width: 200px;
+       height: 200px;
+       position: relative;
+       box-shadow: 0 1px 4px rgba(45,37,37,0.1);
+       
+    }
+    .food-titile{
+        font-size: large;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    .food-rate{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        
+        font-weight: 550;
+       
+    }
+    .pic img{
+       width: 100%;
+      height: 75%;
+      transition: 0.3s;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+   .shop-container{
+    
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+   }
+   .add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(13, 211, 13);
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+   }
+   .add-cart:hover{
+    color: rgb(255, 122, 122);
+   }
+    .pic img:hover{
+     transform: scale(1.1);
+     object-fit: cover;
+        
+    }
+   .cart1{
+   position: fixed;
+    top: 0;
+    right: -100%;
+   width: 300px;
+   height: 100vh;
+   overflow-y: auto;
+   overflow: hidden;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 1px 4px rgb(40, 37,37,0.1);
+   }
+   .cart-box img{
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border: 2px solid rgb(0, 0, 0,0.1);
+  padding: 5px;
+   }
+   .cart-active{
+   right: 0;
+   transition: 0.5;
+   }
+   .cart-titile{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+   }
+   .cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom:  2px solid rgb(0, 0, 0,0,1);
+   }
+   .detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+   }
+   .price-box{
+    display: flex;
+    justify-content: space-between;
+   }
+   .cart-food-titile{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 500;
+   }
+   .cart-qty{
+    border: 1px solid rgb(0, 0, 0,0,1);
+    outline: none;
+    width: 2.2rem;
+    text-align: center;
+    font-size: 1rem;
+
+   }
+   .cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+   }
+   .total{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 1rem;
+   }
+   .total-price{
+    margin-left: 0.5rem;
+   }
+   .btn-buy{
+    padding: 12px 20px;
+    background-color: darkslategray;
+    color: white;font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+   }
+   .total-title{
+    font-weight: 600;
+   }
+   .cart-close{
+    position: absolute;
+    top: 20;
+    right: 10;
+    font-size: 2rem;
+    cursor: pointer;
+
+   }
+   
+
+
+
+}
+
+@media(max-width:600px){
     .nav{
         width: 100%;
         height: auto;
@@ -42,26 +261,24 @@
    text-align: center;
     }
     .shop{
-        margin-left: 10%;    
-        margin-right: 10%;
+        
         display: grid;
-        justify-items: center;
-        align-content: center;
-        grid-template-columns: repeat(auto-fill,minmax(220px,auto));
+        
+        grid-template-columns: repeat(auto-fill,minmax(150px,auto));
          gap: 20px;
     }
     .foods{
      
        padding: 10px;
-       width: 200px;
-       height: 200px;
+       width: 130px;
+       height: 150px;
        position: relative;
        box-shadow: 0 1px 4px rgba(45,37,37,0.1);
        
     }
     .food-titile{
-        font-size: large;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 600;
         margin-top: 5px;
     }
     .food-rate{
