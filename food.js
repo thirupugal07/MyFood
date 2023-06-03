@@ -9,3 +9,17 @@ cls.addEventListener('click',()=>
 {
     cart.classList.remove('cart-active');
 });
+document.addEventListener('DOMContentLoaded',loadFood);
+function loadFood(){
+
+    LoadContent();
+}
+function LoadContent(){
+    let btnremove=document.querySelectorAll('.cart-remove');
+    btnremove.forEach((btn)=>{
+        btn.addEventListener('click',remveitems);
+    });
+}
+function remveitems(){
+    this.parentElement.remove();
+}
