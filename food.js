@@ -19,7 +19,15 @@ function LoadContent(){
     btnremove.forEach((btn)=>{
         btn.addEventListener('click',remveitems);
     });
+     let qtnyitems=document.querySelectorAll('.cart-qty');
+    qtnyitems.forEach((btn1)=>{
+        btn1.addEventListener('change',changeQtyitem);
+    });
 }
 function remveitems(){
     this.parentElement.remove();
 }
+function changeQtyitem(){
+    if(isNaN(this.value)  || this.value<1 ){
+        this.value=1;
+    }
