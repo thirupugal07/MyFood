@@ -23,9 +23,16 @@ function LoadContent(){
     qtnyitems.forEach((btn1)=>{
         btn1.addEventListener('change',changeQtyitem);
     });
+     let addcart1=document.querySelectorAll('.add-cart');
+    addcart1.forEach((btn2)=>{
+        btn2.addEventListener('click',addcart);   
+    });
 }
 function remveitems(){
+    let titile=this.parentElement.querySelector('.cart-food-titile').innerHTML;
+    fooditems=fooditems.filter(el=>el.titile!=titile);
     this.parentElement.remove();
+    LoadContent();
 }
 function changeQtyitem(){
     if(isNaN(this.value)  || this.value<1 ){
@@ -34,6 +41,7 @@ function changeQtyitem(){
    
    
 }
+let fooditems=[];
 function addcart(){
     
     let foods=this.parentElement;
