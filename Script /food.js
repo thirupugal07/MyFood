@@ -41,6 +41,18 @@ function addcart(){
     let price=foods.querySelector('.food-rate').innerHTML;
     let imgsrc=foods.querySelector('.food-img').src;
    
+    let newprodeuct={titile,price,imgsrc};
+ 
+    if(fooditems.find((el)=>el.titile==newprodeuct.titile))
+    {
+        alert('product already exitis');
+       
+      
+        return ;       
+    }
+    else{
+        fooditems.push(newprodeuct);
+    }
     let newproductele=addcartproduct(titile,price,imgsrc);
     let element=document.createElement('div');
     element.innerHTML=newproductele;
