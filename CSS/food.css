@@ -343,4 +343,17 @@
      object-fit: cover;
         
     }
+    .cart1{
+        position: fixed;
+         top: 0;
+         right: -100%;
+        width: 300px;
+        height: 100vh;
+        overflow-y: auto;
+        overflow: hidden;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 1px 4px rgb(40, 37,37,0.1);
+        z-index: 99;    
+    }
 }
