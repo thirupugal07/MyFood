@@ -235,7 +235,13 @@
 .food-var{
     text-align: center;
 }
+.food-nav-img{
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
 
+}
 }
 
 @media(max-width:600px){
