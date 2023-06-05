@@ -367,4 +367,11 @@
          right: 0;
          transition: 0.5;
          }
+      .cart-titile{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      
+         }
 }
