@@ -226,7 +226,15 @@
     align-items: center;
     background-color: beige;
 }
-
+.food-var a{
+    gap: 10px;
+    
+    text-decoration: none;
+    
+}
+.food-var{
+    text-align: center;
+}
 
 }
 
