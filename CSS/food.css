@@ -374,4 +374,14 @@
         margin-bottom: 1rem;
       
          }
+             .cart-box{
+          display: grid;
+          grid-template-columns: 32% 50% 18%;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          border-bottom:  2px solid rgb(0, 0, 0,0,1);
+         }
+
+    
 }
