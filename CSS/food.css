@@ -356,4 +356,15 @@
         box-shadow: 0 1px 4px rgb(40, 37,37,0.1);
         z-index: 99;    
     }
+     .cart-box img{
+        width: 85px;
+        height: 85px;
+        object-fit: cover;
+        border: 2px solid rgb(0, 0, 0,0.1);
+        padding: 5px;
+         }
+         .cart-active{
+         right: 0;
+         transition: 0.5;
+         }
 }
