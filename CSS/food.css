@@ -383,5 +383,57 @@
           border-bottom:  2px solid rgb(0, 0, 0,0,1);
          }
 
-    
+               .detail-box{
+          display: grid;
+          row-gap: 0.5rem;
+         }
+         .price-box{
+          display: flex;
+          justify-content: space-between;
+         }
+         .cart-food-titile{
+          font-size: 16px;
+          text-transform: uppercase;
+          color: red;
+          font-weight: 500;
+         }
+         .cart-qty{
+          border: 1px solid rgb(0, 0, 0,0,1);
+          outline: none;
+          width: 2.2rem;
+          text-align: center;
+          font-size: 1rem;
+      
+         }
+         .cart-remove{
+          font-size: 24px;
+          color: red;
+          cursor: pointer;
+         }
+         .total{
+         display: flex;
+         justify-content: flex-end;
+         margin-top: 1rem;
+         }
+         .total-price{
+          margin-left: 0.5rem;
+         }
+         .btn-buy{
+          padding: 12px 20px;
+          background-color: darkslategray;
+          color: white;font-size: 1rem;
+          font-weight: 500;
+          cursor: pointer;
+         }
+         .total-title{
+          font-weight: 600;
+         }
+         .cart-close{
+          position: absolute;
+          top: 20;
+          right: 10;
+          font-size: 2rem;
+          cursor: pointer;
+      
+         }
 }
