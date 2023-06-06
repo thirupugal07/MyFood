@@ -430,7 +430,7 @@
          }
          .cart-close{
           position: absolute;
-          top: 20;
+          top: 10;
           right: 10;
           font-size: 2rem;
           cursor: pointer;
