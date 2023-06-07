@@ -1,4 +1,4 @@
-const btncart=document.querySelector('.cart-icon');
+const btncart=document.querySelector('#cart');
 const cart=document.querySelector('.cart1');
 const cls=document.querySelector('.cart-close');
 btncart.addEventListener('click',()=>
