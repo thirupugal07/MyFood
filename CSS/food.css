@@ -242,6 +242,62 @@
     border-radius: 100px;
 
 }
+
+
+
+  .foolabe{ 
+     padding-top: 30px; 
+     padding-left: 10px; 
+     margin-left: 50px; 
+  
+   } 
+   footer{ 
+      
+     width: 100%; 
+     margin-top: 30px; 
+     background-color: rgb(238, 238, 238); 
+   } 
+   .footerdetails0 { 
+     
+    display: grid; 
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr)); 
+    column-gap: 30px; 
+    row-gap: 20px; 
+   
+   } 
+   .footerdetails a{ 
+     padding-top: 100px; 
+     color: black; 
+     text-align: center; 
+     text-decoration: none; 
+     font-size: 12px; 
+     
+      
+   } 
+   .footerdetails{ 
+     
+     width: 150px; 
+     height: 180px; 
+     position: relative; 
+     left: 50px; 
+      
+   } 
+  
+   .footerdetails img{ 
+   width: 150px; 
+   height: 50px; 
+    
+   } 
+ .footerdetails ul{ 
+   
+ list-style: none; 
+  
+  
+ } 
+ .social{ 
+   width: 25px; 
+   height: 25px; 
+ }
 }
 
 @media(max-width:600px){
