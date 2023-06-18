@@ -239,7 +239,19 @@
         height: 150px;
         
       }
-   
+        
+      .horizontal-scrollable{
+        width: 90%;
+        margin: auto;
+        
+      }
+    .horizontal-scrollable > .row > .col-xs-12{  
+        display: inline-block;  
+       width: 200px;
+       height: 170px;
+        float: none;  
+        gap: 10px;
+    }  
 
 }
 
