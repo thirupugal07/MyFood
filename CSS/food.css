@@ -216,6 +216,17 @@
     cursor: pointer;
 
    }
+  .horizontal-scrollable > .row {  
+        overflow-x: auto;  
+        white-space: nowrap;  
+       scroll-behavior: smooth;
+      
+    }  
+    .horizontal-scrollable ::-webkit-scrollbar{
+        display: none;
+    }
+
+    
    
 
 }
