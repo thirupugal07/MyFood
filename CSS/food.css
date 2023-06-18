@@ -262,6 +262,21 @@
     width: 100%;
     height: 110px;
    }
+    .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.backbtn{
+font-size: 50px;
+
+}
+.nextbtn{
+    font-size: 50px;
+    
+}
 
 }
 
