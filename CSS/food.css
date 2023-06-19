@@ -277,7 +277,10 @@ font-size: 50px;
     font-size: 50px;
     
 }
+.nextbtn .backbtn::hover{
 
+Cursor :pointer;
+}
 }
 
 
