@@ -39,7 +39,7 @@ function changeQtyitem(){
         this.value=1;
     }
    
-   
+   LoadContent();
 }
 let fooditems=[];
 function addcart(){
