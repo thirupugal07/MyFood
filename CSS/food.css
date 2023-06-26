@@ -287,7 +287,11 @@ Cursor :pointer;
 
     color: #ffffff;
 }
-
+.foot p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+padding-top: 10px;
+}
 }
 
 
