@@ -85,4 +85,23 @@ function addcartproduct(titile,price,imgsrc){
     <ion-icon name="trash" class="cart-remove"></ion-icon>
 </div>`;
 }
-
+function totalamt(){
+    const cartitems=document.querySelectorAll('.cart-box');
+    const totalval=document.querySelector('.total-price');
+    let total=0;
+    cartitems.forEach(product=>
+        {
+            let pricEle=product.querySelector('.cart-price');
+            let price=parseFloat(pricEle.innerHTML.replace("Rs.",""));
+            let qty=product.querySelector('.cart-qty').value;
+            total+=(price*qty);
+            product.querySelector('.cart-amt').innerHTML='Rs.'+(price*qty);
+           
+        }
+        );
+        totalval.innerHTML='Rs.'+total;
+        const cartcount=document.querySelector('.cartno');
+        let count = fooditems.length;
+        cartcount.innerHTML=count;
+    
+    }
