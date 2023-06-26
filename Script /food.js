@@ -85,3 +85,4 @@ function addcartproduct(titile,price,imgsrc){
     <ion-icon name="trash" class="cart-remove"></ion-icon>
 </div>`;
 }
+
