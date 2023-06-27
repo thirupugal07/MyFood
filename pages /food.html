@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foods </title>
+    <title>MyFood</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <!-- <link rel="stylesheet" 
+   <!-- <link rel="stylesheet" 
     href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="CSS/food.css">
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+-->    
+<link rel="stylesheet" href="/CSS/food.css">
 </head>
 <body>
+   
     <header>
         
          <div class="nav">
 
-            <div class="logo"> <img src="pictures/1684779218243.png" alt=""width=200px height="80px"></div>
+            <div class="logo d-flex" > <a href="/index.html"><img src="/pictures/1684779218243.png" alt=""width=200px height="80px"></a></div>
             <div class="cart">
                 <div class="cartno" >0</div>
-                <ion-icon id="cart" name="cart-outline"></ion-icon> 
+                <ion-icon id="cart" class="cart-icon" name="cart-outline"></ion-icon> 
             </div>
            
            <div class="cart1 ">
@@ -65,21 +67,24 @@
             <ion-icon name="close" id="cart-close" class="cart-close"></ion-icon>
            </div>
             </div>
-        <script src="/Script/food.js"></script>
+       
     </header>
+    <script src="/Script/food.js"></script>
+    
     <div class="head-space">
 
     </div>
-     <div class="wrap">
-    <ion-icon name="arrow-back-outline" class="backbtn"></ion-icon>
-    <div class="food-varient container horizontal-scrollable">
+  <div class="wrap">
+    <span class="backbtn"> <ion-icon name="arrow-back-outline" class="backbtn1"></ion-icon></span>
+
+      <div class="food-varient container horizontal-scrollable">
        <div class="row text-center">
-        <div class="food-var  col-xs-12">
+        <div class="food-var  col-xs-12 f1">
             <a href=""><img src="/pictures/biriyani.jpeg" class="food-nav-img" alt=""></a>
          <br><a href="" class="food-var-name">Biriyani</a>
         </div> 
         <div class="food-var col-xs-12  ">
-            <a href=""><img src="/pictures/chickn.jpeg" class="food-nav-img" alt=""></a>
+            <a href="/pages/food2.html"><img src="/pictures/chickn.jpeg" class="food-nav-img" alt=""></a>
         <br><a href="" class="food-var-name">Chicken</a>
         </div>
         <div class="food-var col-xs-12">
@@ -125,9 +130,10 @@
         </div>
         </div>
     </div>
-    <ion-icon name="arrow-forward-outline" class="nextbtn"></ion-icon>
+   <ion-icon name="arrow-forward-outline" class="nextbtn i"></ion-icon>
   </div>
-    </div>
+     
+    
     <div class="shop-container">
         <h1 class="title">Biriyani</h1>
     <div class="shop">
