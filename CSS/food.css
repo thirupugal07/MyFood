@@ -321,38 +321,61 @@ padding-top: 10px;
 }
 
 
-
-
 @media(max-width:600px){
-    .nav{
+    header{
         width: 100%;
-        height: auto;
-        display: flex;
-         margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .nav{
         
+        width: 100%;
+        height: 80px;
+        
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         
          box-shadow: rgba(0,0,0,.25) 0px 5px 15px;
     }
+    .logo{
+        float: left;
+    }
     .cart{
-        position: absolute;
-        right: 10px;
-        max-width: 1200px;     
-        display: block;
+       position: relative;
+      margin-right: 10px;
+
+           
+       
     }
     .cartno{   
-        position: absolute;
-        right: 40px;
-        top: 5px;
-        font-size: 23px;
-        font-style: bold;    
+          position: absolute;
+          left: 28px;
+          text-align: center;
+          top: -10px;
+          width:20px;
+        font-size: 21px;
+        font-style: bold;   
+        border-radius: 50px;
+        background-color: rgb(0, 255, 0); 
     }
     #cart{
-        color: rgb(247, 15, 15);
-       position: absolute;
-       right: 28px;
-       top: 15px;
+        color: #f70f0f;
+        cursor: pointer;
+     
        width: 50px;
        height: 50px;
          
+    }
+    .head-space{
+        width: 100%;
+        height: 50px;
     }
      
    
@@ -362,32 +385,34 @@ padding-top: 10px;
    text-align: center;
     }
     .shop{
-        
+        margin-left: 10%;    
+        margin-right: 10%;
         display: grid;
-        
+        justify-items: center;
+        align-content: center;
         grid-template-columns: repeat(auto-fill,minmax(150px,auto));
          gap: 20px;
     }
     .foods{
      
        padding: 10px;
-       width: 130px;
+       width: 150px;
        height: 150px;
        position: relative;
        box-shadow: 0 1px 4px rgba(45,37,37,0.1);
        
     }
     .food-titile{
-        font-size: 12px;
-        font-weight: 600;
+        font-size: 13px;
+        font-weight: 700;
         margin-top: 5px;
     }
     .food-rate{
         position: absolute;
-        bottom: 10px;
+        bottom: 0px;
         left: 10px;
         
-        font-weight: 550;
+        font-weight: 100;
        
     }
     .pic img{
@@ -411,7 +436,7 @@ padding-top: 10px;
     right: 0;
     background-color: rgb(13, 211, 13);
     color: aliceblue;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
    }
    .add-cart:hover{
@@ -422,99 +447,193 @@ padding-top: 10px;
      object-fit: cover;
         
     }
-    .cart1{
-        position: fixed;
-         top: 0;
-         right: -100%;
-        width: 300px;
-        height: 100vh;
-        overflow-y: auto;
-        overflow: hidden;
-        padding: 20px;
-        background-color: white;
-        box-shadow: 0 1px 4px rgb(40, 37,37,0.1);
-        z-index: 99;    
+   .cart1{
+   position: fixed;
+    top: 0;
+    right: -100%;
+   width: 200px;
+   height: 100vh;
+   overflow-y: auto;
+   overflow: hidden;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 1px 4px rgb(40, 37,37,0.1);
+   }
+   .cart-box img{
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border: 2px solid rgb(0, 0, 0,0.1);
+  padding: 5px;
+   }
+   .cart-active{
+   right: 0;
+   transition: 0.5;
+   }
+   .cart-titile{
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+
+   }
+   .cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom:  2px solid rgb(0, 0, 0,0,1);
+   }
+   .detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+   }
+   .price-box{
+    display: flex;
+    justify-content: space-between;
+   }
+   .cart-food-titile{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 500;
+   }
+   .cart-qty{
+    border: 1px solid rgb(0, 0, 0,0,1);
+    outline: none;
+    width: 2.2rem;
+    text-align: center;
+    font-size: 1rem;
+
+   }
+   .cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+   }
+   .total{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 1rem;
+   }
+   .total-price{
+    margin-left: 0.5rem;
+   }
+   .btn-buy{
+    padding: 12px 20px;
+    background-color: darkslategray;
+    color: white;font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+   }
+   .total-title{
+    font-weight: 600;
+   }
+   .cart-close{
+    position: absolute;
+    top: 20;
+    right: 10;
+    font-size: 2rem;
+    cursor: pointer;
+
+   }
+ 
+ 
+          
+    .horizontal-scrollable > .row {  
+        overflow-x: auto;  
+        white-space: nowrap;  
+       scroll-behavior: smooth;
+      
+    }  
+    .horizontal-scrollable ::-webkit-scrollbar{
+        display: none;
     }
-     .cart-box img{
-        width: 85px;
-        height: 85px;
-        object-fit: cover;
-        border: 2px solid rgb(0, 0, 0,0.1);
-        padding: 5px;
-         }
-         .cart-active{
-         right: 0;
-         transition: 0.5;
-         }
-      .cart-titile{
+    .food-var img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+    }
+    
+      .horizontal-scrollable{
+        width: 90%;
+        margin: auto;
+        
+      }
+    .horizontal-scrollable > .row > .col-xs-12{  
+        display: inline-block;  
+       width: 200px;
+       height: 170px;
+        float: none;  
+        gap: 10px;
+    }  
+     
+      
+    .col-xs-12 {  
+        color: rgb(255, 255, 255);  
+        font-size: 25px;
         text-align: center;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-      
-         }
-             .cart-box{
-          display: grid;
-          grid-template-columns: 32% 50% 18%;
-          align-items: center;
-          gap: 1rem;
-          margin-top: 1rem;
-          border-bottom:  2px solid rgb(0, 0, 0,0,1);
-         }
-
-               .detail-box{
-          display: grid;
-          row-gap: 0.5rem;
-         }
-         .price-box{
-          display: flex;
-          justify-content: space-between;
-         }
-         .cart-food-titile{
-          font-size: 16px;
-          text-transform: uppercase;
-          color: red;
-          font-weight: 500;
-         }
-         .cart-qty{
-          border: 1px solid rgb(0, 0, 0,0,1);
-          outline: none;
-          width: 2.2rem;
-          text-align: center;
-          font-size: 1rem;
-      
-         }
-         .cart-remove{
-          font-size: 24px;
-          color: red;
-          cursor: pointer;
-         }
-         .total{
-         display: flex;
-         justify-content: flex-end;
-         margin-top: 1rem;
-         }
-         .total-price{
-          margin-left: 0.5rem;
-         }
-         .btn-buy{
-          padding: 12px 20px;
-          background-color: darkslategray;
-          color: white;font-size: 1rem;
-          font-weight: 500;
-          cursor: pointer;
-         }
-         .total-title{
-          font-weight: 600;
-         }
-         .cart-close{
-          position: absolute;
-          top: 20;
-          right: 10;
-          font-size: 2rem;
-          cursor: pointer;
-      
-         }
-
+        padding-bottom: 10px;  
+        padding-top: 10px;  
   
+       
+    }
+    .col-xs-12 a{
+        text-decoration: none;   
+        
+    }
+      
+    
+   .head-space{
+    width: 100%;
+    height: 110px;
+   }
+   
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    border-radius: 10px;
+    
 }
+.backbtn{
+font-size: 50px;
+
+}
+.nextbtn{
+    font-size: 50px;
+    
+}
+.f1 img{
+    border: 5px solid rgb(255, 94, 94);
+    
+   
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+   
+    height: 100px;
+
+}
+
+.foot{
+ 
+    text-align: center;
+
+    color: #ffffff;
+}
+.foot p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+padding-top: 10px;
+}
+}
+
+
