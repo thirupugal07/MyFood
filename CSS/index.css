@@ -1,3 +1,4 @@
+
 *{
   padding: 0;
   box-sizing: border-box;
@@ -165,6 +166,8 @@ body {
       
     }
     .offer{
+    
+
       display: grid;
       grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
       column-gap: 15px;
@@ -172,6 +175,16 @@ body {
       margin-top: 20px;
       margin-left: 10px;
     }
+  .offeritem{
+    position: relative;
+    width: 250px;
+    height: 300px;
+   
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+   
+   
     .offer img{
       width: 250px;
       height: 250px;
@@ -183,13 +196,13 @@ body {
       width: 250px;
       background-color: aliceblue;
       border-radius: 10px;
-
+  
       height:300px;
     }
     .offer h1{
       font-size: 17px;
-      position: relative;
-      bottom: 45px;
+      position: absolute;
+      bottom: 15px;
       
       
     }
@@ -202,23 +215,26 @@ body {
       color: #ffffff;
       text-align: center;
       padding-top: 3px;
-      position: relative;
-      bottom: 335px;
-      left: 200px;
+      position: absolute;
+       top: -15px;
+      right: 0;
       cursor: pointer;
     }
     .offer p{
-      position: relative;
-      bottom: 98px;
+      position: absolute;
+      
+      left: 0;
+      bottom: -6px;
       font-style: serif;
       font-size: 15px;
       font-weight: 500;
       color: rgb(142, 142, 145);
     }
     .offer h4{
-      position: relative;
-      bottom: 135px;
-      left: 150px;
+      position: absolute;
+      
+      right: 0;
+      bottom: -8px;
       font-style: serif;
       font-size: 14px;
       font-weight: 500;
@@ -233,7 +249,7 @@ body {
       height: 33px;
       bottom: 35px;
       padding-top: 3px;
-
+  
       
       background-color: red;
     }
@@ -289,7 +305,16 @@ body {
   
 }
 
+
 }
+
+
+
+
+
+
+
+
 
 
 @media(max-width:600px){
