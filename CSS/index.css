@@ -308,15 +308,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
 @media(max-width:600px){
  .loc{
   width: 0px;
@@ -413,39 +404,49 @@ border-radius: 50px;
     
   }
   .offerable img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .offerable h1 {
   display: inline;
-   position: relative;
-   bottom: 35px;
+ 
+   
    
     
   }
   .offer{
+    
+
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-    column-gap: 10px;
-    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap: 20px;
     margin-top: 20px;
     margin-left: 10px;
   }
+.offeritem{
+  position: relative;
+  width: 150px;
+  height: 190px;
+ 
+  column-gap: 20px;
+  row-gap: 20px;
+}
   .offer img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   .offer a{
     text-decoration: none;
     color: black;
+  
    
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
   .offer h1{
-    font-size: 20px;
-    position: relative;
-    bottom: 40px;
+    font-size:10px;
+   position: absolute;
+    bottom: 10px;
     left: 40px;
         
   }
@@ -462,14 +463,7 @@ border-radius: 50px;
     
     background-color: red;
   }
-  .offer{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
-    column-gap: 15px;
-    row-gap: 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
+ 
   .offer img{
     width: 150px;
     height: 150px;
@@ -485,10 +479,10 @@ border-radius: 50px;
     height:200px;
   }
   .offer h1{
-    font-size: 15px;
-    position: relative;
-    bottom: 45px;
-    left: 10px;
+    font-size: 12px;
+    position:absolute;
+    bottom: 10px;
+    left: 0px;
     
   }
   .offer h3{
@@ -500,23 +494,26 @@ border-radius: 50px;
     color: #ffffff;
     text-align: center;
     padding-top: 3px;
-    position: relative;
-    bottom: 451px;
-    left: 110px;
+    position: absolute;
+     top: -10px;
+    right: 0;
     cursor: pointer;
   }
   .offer p{
-    position: relative;
-    bottom: 85px;
+    position: absolute;
+    
+    left: 0;
+    bottom: -5px;
     font-style: serif;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 500;
     color: rgb(142, 142, 145);
   }
   .offer h4{
-    position: relative;
-    bottom: 113px;
-    left: 90px;
+    position: absolute;
+    
+    right: 0;
+    bottom: -8px;
     font-style: serif;
     font-size: 10px;
     font-weight: 500;
@@ -594,3 +591,11 @@ list-style: none;
 }
 
 }
+
+
+
+
+
+
+
+
