@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +28,9 @@
          
          box-shadow: rgba(0,0,0,.25) 0px 5px 15px;
     }
+    .logo{
+        float: left;
+    }
     .cart{
        position: relative;
       margin-right: 10px;
@@ -45,7 +50,8 @@
         background-color: rgb(0, 255, 0); 
     }
     #cart{
-        color: rgb(247, 15, 15);
+        color: #f70f0f;
+        cursor: pointer;
      
        width: 50px;
        height: 50px;
@@ -216,7 +222,10 @@
     cursor: pointer;
 
    }
-  .horizontal-scrollable > .row {  
+ 
+ 
+          
+    .horizontal-scrollable > .row {  
         overflow-x: auto;  
         white-space: nowrap;  
        scroll-behavior: smooth;
@@ -225,21 +234,13 @@
     .horizontal-scrollable ::-webkit-scrollbar{
         display: none;
     }
-
-        .food-var img {
+    .food-var img {
         width: 120px;
         height: 120px;
         border-radius: 50%;
 
     }
-      .food-var {
-        display: block;
-        
-        width: 150px;
-        height: 150px;
-        
-      }
-        
+    
       .horizontal-scrollable{
         width: 90%;
         margin: auto;
@@ -252,6 +253,17 @@
         float: none;  
         gap: 10px;
     }  
+     
+      
+    .col-xs-12 {  
+        color: rgb(255, 255, 255);  
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;  
+        padding-top: 10px;  
+  
+       
+    }
     .col-xs-12 a{
         text-decoration: none;   
         
@@ -262,12 +274,15 @@
     width: 100%;
     height: 110px;
    }
-    .wrap{
+   
+
+.wrap{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: bisque;
     border-radius: 10px;
+    
 }
 .backbtn{
 font-size: 50px;
@@ -277,10 +292,21 @@ font-size: 50px;
     font-size: 50px;
     
 }
-.nextbtn .backbtn::hover{
-
-Cursor :pointer;
+.f1 img{
+    border: 5px solid rgb(255, 94, 94);
+    
+   
 }
+
+
+footer{
+    background-color: black;
+    width: 100%;
+   
+    height: 100px;
+
+}
+
 .foot{
  
     text-align: center;
@@ -293,8 +319,6 @@ text-align: center;
 padding-top: 10px;
 }
 }
-
-
 
 
 
