@@ -1,0 +1,32 @@
+{
+  "name": "myfood",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MyFood - food delivery frontend built with React and Vite",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint src --ext js,jsx",
+    "verify": "node scripts/smoke.mjs",
+    "verify:flows": "node scripts/interact.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "vite": "^5.4.2",
+    "jsdom": "^25.0.1"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
